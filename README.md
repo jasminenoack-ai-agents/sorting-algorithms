@@ -33,6 +33,8 @@ Execute the Karma test suite:
 npm test
 ```
 
+The tests run in a jsdom environment so no browser installation is required.
+
 ## Demo
 
 <http://jasminenoack.com/sorting-algorithms/>
