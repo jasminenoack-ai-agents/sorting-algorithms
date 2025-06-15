@@ -13,8 +13,8 @@ export const setUpPipe = (
   query: { [key: string]: string },
 ) => {
   // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/pipe.njk");
-  const html = tpl.render({
+  const tpl = require("../../templates/pipe.liquid");
+  const html = tpl({
     defaults: {
       count: "xLarge",
       shuffle: "RandomShuffle",

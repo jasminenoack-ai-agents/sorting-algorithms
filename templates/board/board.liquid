@@ -2,7 +2,7 @@
   <h1>{{title}}</h1>
   <span class="data">
     <div class="board-information">
-      {% include "./boardData.njk" %}
+      {% include boardData %}
     </div>
     {% if verbosity > 3 %}
     <button class="remove" {% if disabled %}disabled{% endif %}>X</button>

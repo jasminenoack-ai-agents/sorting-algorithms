@@ -28,7 +28,7 @@ export class StickDisplay extends AbstractDisplay {
    * @override
    */
   public getTemplate() {
-    return require("../../templates/board/sticks.njk");
+    return require("../../templates/board/sticks.liquid");
   }
 
   /**

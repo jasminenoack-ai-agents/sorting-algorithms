@@ -32,7 +32,7 @@ export class GraphDisplay extends AbstractDisplay {
    * @override
    */
   public getTemplate() {
-    return require("../../templates/board/list.njk");
+    return require("../../templates/board/list.liquid");
   }
 
   /**

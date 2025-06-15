@@ -12,8 +12,8 @@ export const setUpScatter = (
   query: { [key: string]: string },
 ) => {
   // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/scatter.njk");
-  const html = tpl.render({
+  const tpl = require("../../templates/scatter.liquid");
+  const html = tpl({
     defaults: {
       count: "xLarge",
       shuffle: "RandomShuffle",

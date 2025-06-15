@@ -11,8 +11,8 @@ module.exports = {
         test: /\.tsx?$/,
       },
       {
-        loader: path.resolve(__dirname, "lib/loaders/simple-nunjucks-loader.js"),
-        test: /\.(njk|nunjucks)$/,
+        loader: path.resolve(__dirname, "lib/loaders/simple-liquid-loader.js"),
+        test: /\.liquid$/,
       },
     ],
   },

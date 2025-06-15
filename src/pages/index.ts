@@ -44,8 +44,8 @@ export const setUpIndex = (
   query: { [key: string]: string },
 ) => {
   // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/index.njk");
-  const html = tpl.render({
+  const tpl = require("../../templates/index.liquid");
+  const html = tpl({
     blog,
     learn,
     tools,

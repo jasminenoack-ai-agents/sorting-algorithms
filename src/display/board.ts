@@ -18,7 +18,7 @@ export class BoardDisplay extends AbstractDisplay {
    * @override
    */
   public getTemplate() {
-    return require("../../templates/board/board.njk");
+    return require("../../templates/board/board.liquid");
   }
 
   /**
