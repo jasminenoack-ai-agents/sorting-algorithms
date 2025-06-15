@@ -6,7 +6,7 @@ webpackConfig.module.rules.push({
   exclude: /node_modules|\.spec\.js$/,
   test: /\.ts$|\.tsx$/,
   use: {
-    loader: "istanbul-instrumenter-loader",
+    loader: "@jsdevtools/coverage-istanbul-loader",
     options: { esModules: true },
   },
 });
