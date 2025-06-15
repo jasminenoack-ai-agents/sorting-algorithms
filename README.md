@@ -17,13 +17,20 @@ npm install
 
 ## Building
 
-Compile the project and watch for changes with:
+Build the project with:
 
 ```bash
 npm run build
 ```
 
-This command runs `webpack --watch` internally.
+Run the development build and watch for changes with:
+
+```bash
+npm run build:watch
+```
+
+Both commands output the bundled file into the `dist/` directory which is
+referenced by `index.html`.
 
 ## Running tests
 
