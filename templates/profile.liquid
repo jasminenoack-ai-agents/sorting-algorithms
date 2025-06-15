@@ -1,4 +1,4 @@
-{% include "./controls/home.njk" %}
+{% include controls/home %}
 <h2>Profiles</h2>
 <div>
   This visualization shows the profile for a given sort.
@@ -6,13 +6,13 @@
 <article class="sorting">
   <div class="controls clear">
     <div>
-      {% include "./controls/sort.njk" %}
-      {% include "./controls/count.njk" %}
-      {% include "./controls/order.njk" %}
-      {% include "./controls/values.njk" %}
-      {% include "./controls/checkboxes.njk" %}
+      {% include controls/sort %}
+      {% include controls/count %}
+      {% include controls/order %}
+      {% include controls/values %}
+      {% include controls/checkboxes %}
     </div>
-    {% include "./controls/profileButtons.njk" %}
+    {% include controls/profileButtons %}
     <div>
       Sorts: <span id="sorts"></sorts>
     </div>

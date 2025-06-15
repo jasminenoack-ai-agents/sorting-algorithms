@@ -1,4 +1,4 @@
-{% include "./controls/home.njk" %}
+{% include controls/home %}
 <h2>Pipe</h2>
 <div>
   This visualization shows the profile for a given sort.
@@ -6,12 +6,12 @@
 <article class="sorting">
   <div class="controls clear">
     <div>
-      {% include "./controls/sort.njk" %}
-      {% include "./controls/count.njk" %}
-      {% include "./controls/order.njk" %}
-      {% include "./controls/values.njk" %}
+      {% include controls/sort %}
+      {% include controls/count %}
+      {% include controls/order %}
+      {% include controls/values %}
     </div>
-    {% include "./controls/runButtons.njk" %}
+    {% include controls/runButtons %}
   </div>
 </article>
   <div id="pipe">

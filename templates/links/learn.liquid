@@ -1,0 +1,7 @@
+<h3>Learn More</h3>
+
+<ul>
+{% for item in learn %}
+  <a href="{{ item[1] }}" target="_blank"><li>{{ item[0] }}</li></a>
+{% endfor %}
+</ul>

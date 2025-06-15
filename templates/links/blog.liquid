@@ -1,0 +1,7 @@
+<h3>Blog Entries</h3>
+
+<ul>
+{% for entry in blog %}
+  <a href="{{ entry[1] }}" target="_blank"><li>{{ entry[0] }}</li></a>
+{% endfor %}
+</ul>

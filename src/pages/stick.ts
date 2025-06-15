@@ -20,8 +20,8 @@ export const setUpStick = (
   data: { [key: string]: string },
   query: { [key: string]: string },
 ) => {
-  const tpl = require("../../templates/stick.njk");
-  const html = tpl.render({
+  const tpl = require("../../templates/stick.liquid");
+  const html = tpl({
     defaults: {
       count: "xLarge",
       shuffle: "ReversedShuffle",

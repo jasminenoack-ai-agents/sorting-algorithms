@@ -9,7 +9,7 @@
     "@types/navigo": "^8.1.2",
     "chart.js": "^4.5.0",
     "commonjs": "^0.0.1",
-    "nunjucks": "^3.2.4",
+    "liquidjs": "^10.21.1",
     "slash": "^1.0.0"
   },
   "devDependencies": {

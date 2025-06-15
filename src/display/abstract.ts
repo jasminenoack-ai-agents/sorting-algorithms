@@ -74,7 +74,7 @@ export abstract class AbstractDisplay {
     const tpl = this.getTemplate();
     let html;
     if (tpl) {
-      html = tpl.render({
+      html = tpl({
         board,
         disabled: !!this.interval,
         height: this.boardHeight,
@@ -196,11 +196,11 @@ export abstract class AbstractDisplay {
    * @param group
    */
   public replaceData(group: ITestGroup) {
-    const tpl = require("../../templates/board/boardData.njk");
+    const tpl = require("../../templates/board/boardData.liquid");
     const board = group.board;
     const sort = group.sort;
     const numPoints = board.points.length;
-    const html = tpl.render({
+    const html = tpl({
       board,
       shuffleTitle: board.shuffle.title,
       sort,

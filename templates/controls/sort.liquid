@@ -1,0 +1,12 @@
+<label>
+  Sort:
+  <select id="sort">
+    {% for sortPair in sorts %}
+      <option value="{{ sortPair[0] }}"
+      {% if defaults.sort == sortPair[0] %}
+        selected
+      {% endif %}
+      >{{ sortPair[1].title }}</option>
+    {% endfor %}
+  </select>
+</label>

@@ -17,7 +17,7 @@ export class PipeDisplay extends AbstractDisplay {
    * @override
    */
   public getTemplate() {
-    return require("../../templates/board/pipe.njk");
+    return require("../../templates/board/pipe.liquid");
   }
 
   /**

@@ -2,7 +2,7 @@
   <div style="position:relative;" id="{{name}}" class="pipe-wrapper">
     <h3>{{title}}</h3>
     <div class="board-information">
-      {% include "./boardData.njk" %}
+      {% include boardData %}
     </div>
     {% if verbosity > 3 %}
       <button class="remove" {% if disabled %}disabled{% endif %}>X</button>

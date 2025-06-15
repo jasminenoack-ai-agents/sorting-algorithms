@@ -17,8 +17,8 @@ const defaults = {
 
 export const setUpSingle = () => {
   // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/single.njk");
-  const html = tpl.render({
+  const tpl = require("../../templates/single.liquid");
+  const html = tpl({
     defaults,
     shuffles,
     sorts,

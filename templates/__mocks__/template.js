@@ -1,3 +1,1 @@
-module.exports = {
-  render: () => '<div class="wrapper"><svg></svg></div>'
-};
+module.exports = () => '<div class="wrapper"><svg></svg></div>';

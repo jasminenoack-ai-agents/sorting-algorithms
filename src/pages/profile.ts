@@ -14,8 +14,8 @@ export const setUpProfile = (
   query: { [key: string]: string },
 ) => {
   // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/profile.njk");
-  const html = tpl.render({
+  const tpl = require("../../templates/profile.liquid");
+  const html = tpl({
     defaults: {
       count: "xLarge",
       shuffle: "RandomShuffle",
