@@ -23,7 +23,7 @@ module.exports = (config) => {
 
     reporters: ["mocha", "coverage-istanbul"],
 
-    browsers: ["ChromeHeadless"],
+    browsers: ["jsdom"],
 
     coverageIstanbulReporter: {
       fixWebpackSourcePaths: true,
