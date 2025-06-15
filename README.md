@@ -42,6 +42,20 @@ npm test
 
 The tests run in a jsdom environment so no browser installation is required.
 
+## Formatting
+
+Run Prettier to check code style:
+
+```bash
+npm run lint
+```
+
+Automatically fix formatting issues with:
+
+```bash
+npm run format
+```
+
 ## Demo
 
 <http://jasminenoack.com/sorting-algorithms/>
