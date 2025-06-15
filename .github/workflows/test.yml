@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: ['**']
   pull_request:
-    branches: [ main ]
+    branches: ['**']
 
 jobs:
   test:
@@ -16,4 +16,4 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - run: npx karma start --single-run
+      - run: npm test
