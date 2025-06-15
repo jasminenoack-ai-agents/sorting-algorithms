@@ -11,7 +11,7 @@ module.exports = {
         test: /\.tsx?$/,
       },
       {
-        loader: "nunjucks-loader",
+        loader: path.resolve(__dirname, "lib/loaders/simple-nunjucks-loader.js"),
         test: /\.(njk|nunjucks)$/,
       },
     ],

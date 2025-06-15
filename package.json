@@ -10,16 +10,16 @@
     "chart.js": "^4.5.0",
     "commonjs": "^0.0.1",
     "nunjucks": "^3.2.4",
-    "nunjucks-loader": "^3.0.0"
+    "slash": "^1.0.0"
   },
   "devDependencies": {
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
     "@types/jasmine": "^5.1.8",
     "@types/jquery": "^3.5.32",
     "@types/node": "^24.0.1",
     "css-loader": "^7.1.2",
     "d3": "^7.9.0",
     "es6-promise": "^4.2.8",
-    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
     "jasmine": "^5.8.0",
     "jquery": "^3.7.1",
     "jsdom": "^20.0.3",
