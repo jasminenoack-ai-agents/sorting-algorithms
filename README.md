@@ -4,7 +4,7 @@ Visual demonstrations of common sorting algorithms.
 
 ## Requirements
 
-This project requires Node.js version 16 or higher. The requirement is
+This project requires Node.js version 20 or higher. The requirement is
 enforced via the `engines` field in `package.json`.
 
 ## Installation
