@@ -53,7 +53,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
   "bugs": {
     "url": "https://github.com/jasminenoack/algorithms/issues"
