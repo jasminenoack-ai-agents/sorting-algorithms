@@ -51,6 +51,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=16"
+  },
   "bugs": {
     "url": "https://github.com/jasminenoack/algorithms/issues"
   },
