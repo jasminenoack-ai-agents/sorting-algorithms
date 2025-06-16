@@ -7,20 +7,19 @@ import { BaseSort } from "../sorts/baseSort";
 import * as sorts from "../sorts/sorts";
 import * as valueTypes from "../valueTypes";
 import { createBoard, sanitizeOptions } from "./utils";
+import { profilePage } from "../templates/pages";
 
 export const setUpProfile = (
   location: string,
   data: { [key: string]: string },
   query: { [key: string]: string },
 ) => {
-  // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/profile.liquid");
-  const html = tpl({
+  const html = profilePage({
     defaults: {
       count: "xLarge",
       shuffle: "RandomShuffle",
       sort: "Comb",
-      value: "Integer",
+      valueType: "Integer",
     },
     shuffles: sanitizeOptions(shuffles, ["title"]),
     sizes: sanitizeOptions(sizes, ["label"]),

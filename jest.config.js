@@ -3,7 +3,6 @@ module.exports = {
   testEnvironment: 'jsdom',
   testMatch: ['**/spec/**/*.ts'],
   moduleNameMapper: {
-    '^d3$': '<rootDir>/node_modules/d3/dist/d3.js',
-    '\\.liquid$': '<rootDir>/templates/__mocks__/template.js'
+    '^d3$': '<rootDir>/node_modules/d3/dist/d3.js'
   }
 };

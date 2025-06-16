@@ -12,6 +12,7 @@ import { IShuffle } from "./../shuffles/abstract";
 import { ISize } from "./../sizes";
 import { IValueType } from "./../valueTypes";
 import { createBoard, sanitizeOptions } from "./utils";
+import { stickPage } from "../templates/pages";
 
 const index = 0;
 
@@ -20,8 +21,7 @@ export const setUpStick = (
   data: { [key: string]: string },
   query: { [key: string]: string },
 ) => {
-  const tpl = require("../../templates/stick.liquid");
-  const html = tpl({
+  const html = stickPage({
     defaults: {
       count: "xLarge",
       shuffle: "ReversedShuffle",

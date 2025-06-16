@@ -10,6 +10,7 @@ import * as sorts from "../sorts/sorts";
 import { Integer, IValueType } from "../valueTypes";
 import { ISize } from "./../sizes";
 import { sanitizeOptions } from "./utils";
+import { singlePage } from "../templates/pages";
 
 const defaults = {
   shuffle: "RandomShuffle",
@@ -17,9 +18,7 @@ const defaults = {
 };
 
 export const setUpSingle = () => {
-  // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/single.liquid");
-  const html = tpl({
+  const html = singlePage({
     defaults,
     shuffles: sanitizeOptions(shuffles, ["title"]),
     sorts: sanitizeOptions(sorts, ["title"]),

@@ -10,10 +10,6 @@ module.exports = {
         loader: "ts-loader",
         test: /\.tsx?$/,
       },
-      {
-        loader: path.resolve(__dirname, "lib/loaders/simple-liquid-loader.js"),
-        test: /\.liquid$/,
-      },
     ],
   },
   output: {
