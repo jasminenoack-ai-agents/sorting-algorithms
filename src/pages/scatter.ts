@@ -5,15 +5,14 @@ import * as sorts from "../sorts/sorts";
 import * as valueTypes from "../valueTypes";
 import { BoardDisplay } from "./../display/board";
 import { createBoard, sanitizeOptions } from "./utils";
+import { scatterPage } from "../templates/pages";
 
 export const setUpScatter = (
   location: string,
   data: { [key: string]: string },
   query: { [key: string]: string },
 ) => {
-  // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/scatter.liquid");
-  const html = tpl({
+  const html = scatterPage({
     defaults: {
       count: "xLarge",
       shuffle: "RandomShuffle",

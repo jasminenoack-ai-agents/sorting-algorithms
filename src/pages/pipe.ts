@@ -6,15 +6,14 @@ import * as sizes from "../sizes";
 import * as sorts from "../sorts/sorts";
 import * as valueTypes from "../valueTypes";
 import { createBoard, sanitizeOptions } from "./utils";
+import { pipePage } from "../templates/pages";
 
 export const setUpPipe = (
   location: string,
   data: { [key: string]: string },
   query: { [key: string]: string },
 ) => {
-  // tslint:disable-next-line:no-var-requires
-  const tpl = require("../../templates/pipe.liquid");
-  const html = tpl({
+  const html = pipePage({
     defaults: {
       count: "xLarge",
       shuffle: "RandomShuffle",
