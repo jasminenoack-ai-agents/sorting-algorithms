@@ -1,7 +1,7 @@
 import * as jquery from "jquery";
 import { Board, Verbosity } from "../board";
 import { BoardDisplay } from "../display/board";
-import { IShuffle, RandomShuffle } from "../shuffles";
+import { IShuffle } from "../shuffles";
 import * as shuffles from "../shuffles";
 import { _25 } from "../sizes";
 import { BaseSort } from "../sorts/baseSort";
@@ -9,6 +9,7 @@ import { Comb } from "../sorts/sorts";
 import * as sorts from "../sorts/sorts";
 import { Integer, IValueType } from "../valueTypes";
 import { ISize } from "./../sizes";
+import { sanitizeOptions } from "./utils";
 
 const defaults = {
   shuffle: "RandomShuffle",
@@ -20,8 +21,8 @@ export const setUpSingle = () => {
   const tpl = require("../../templates/single.liquid");
   const html = tpl({
     defaults,
-    shuffles,
-    sorts,
+    shuffles: sanitizeOptions(shuffles, ["title"]),
+    sorts: sanitizeOptions(sorts, ["title"]),
   });
   return html;
 };

@@ -11,7 +11,7 @@ import { BoardDisplay } from "./../display/board";
 import { IShuffle } from "./../shuffles/abstract";
 import { ISize } from "./../sizes";
 import { IValueType } from "./../valueTypes";
-import { createBoard } from "./utils";
+import { createBoard, sanitizeOptions } from "./utils";
 
 const index = 0;
 
@@ -28,10 +28,10 @@ export const setUpStick = (
       sort: "Comb",
       valueType: "Integer",
     },
-    shuffles,
-    sizes,
-    sorts,
-    valueTypes,
+    shuffles: sanitizeOptions(shuffles, ["title"]),
+    sizes: sanitizeOptions(sizes, ["label"]),
+    sorts: sanitizeOptions(sorts, ["title"]),
+    valueTypes: sanitizeOptions(valueTypes, ["title"]),
   });
   return html;
 };
