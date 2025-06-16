@@ -15,14 +15,14 @@ export interface BoardCtx {
 export function boardData(ctx: BoardCtx): string {
   let out = '';
   if (ctx.verbosity > 2) {
-    out += `<span class="nowrap">Order Type: ${ctx.shuffleTitle}.</span>`;
-    out += `<span class="nowrap">Value Type: ${ctx.board.valueType.title}.</span>`;
-    out += `<span class="nowrap">Point Count: ${ctx.board.size.label}.</span>`;
+    out += ` <span class="nowrap">Order Type: ${ctx.shuffleTitle}</span>`;
+    out += ` <span class="nowrap">Value Type: ${ctx.board.valueType.title}</span>`;
+    out += ` <span class="nowrap">Point Count: ${ctx.board.size.label}</span>`;
   }
   if (ctx.verbosity > 1) {
-    out += `<span class="nowrap">Steps: ${ctx.sort.steps}</span>`;
-    out += `<span class="nowrap">Comparisons: ${ctx.sort.comparisons}</span>`;
-    out += `<span class="nowrap">Moves: ${ctx.sort.swaps}</span>`;
+    out += ` <span class="nowrap">Steps: ${ctx.sort.steps}</span>`;
+    out += ` <span class="nowrap">Comparisons: ${ctx.sort.comparisons}</span>`;
+    out += ` <span class="nowrap">Moves: ${ctx.sort.swaps}</span>`;
   }
   return out;
 }

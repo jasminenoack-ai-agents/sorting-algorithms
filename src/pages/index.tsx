@@ -49,7 +49,7 @@ export const setUpIndex = (
   query: { [key: string]: string }
 ) => {
   const html = renderToStaticMarkup(
-    <IndexPage blog={blog} learn={learn} tools={tools} />
+    <IndexPage learn={learn} tools={tools} />
   );
   return html;
 };

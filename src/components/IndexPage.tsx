@@ -1,36 +1,20 @@
 import * as React from 'react';
 
 interface Props {
-  blog: Record<string, string>;
   learn: Record<string, string>;
   tools: Record<string, string>;
 }
 
-export const IndexPage: React.FC<Props> = ({ blog, learn, tools }) => (
+export const IndexPage: React.FC<Props> = ({ learn, tools }) => (
   <>
     <article>
       <h1>Why We Visualize Data</h1>
       <p>
-        The best way to understand how things work is to disect them. To change
-        them, to play with them, to implement them, and to break them. I love
-        thinking about algorithms. How can we understand them better? How can we
-        make them better? How can they make us better? To do this I very much
-        believe that one important step is to understand what data looks like.
-        How it behaves. How algorithms move and manipulate patterns. To do this
-        I use{' '}
-        <a
-          href="https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0"
-          target="blank"
-        >
-          visualizations
-        </a>{' '}
-        This site is a collection of those visualizations. They exist in many
-        formats, orientations and settings because data dictates patterns. And
-        different representations give rise to different patterns. The result of
-        running a sort on reversed data is very different then the result of
-        running the same code on ordered data. In these patterns we can find
-        beauty and insight, and if we are lucky we can begin to understand the
-        magic. But I make no promises.
+        It's really difficult to actually understand how something works if you can't understand why it works.
+        Understanding why something works is usually linked to being able to visually inspect various aspects of it.
+        This doesn't mean that you can see everything all at once necessarily, but it does mean that you can more fully understand why it works the wasy that it does.
+        And with that why it fails when it does fail.
+
         <figure>
           <div id="ordered-sorts" className="four"></div>
           <figcaption>Steps 1-200 on ordered arrays.</figcaption>
@@ -57,14 +41,6 @@ export const IndexPage: React.FC<Props> = ({ blog, learn, tools }) => (
       <ul>
         {Object.entries(tools).map(([name, url]) => (
           <a href={url} target="_top" key={name}>
-            <li>{name}</li>
-          </a>
-        ))}
-      </ul>
-      <h3>Blog Entries</h3>
-      <ul>
-        {Object.entries(blog).map(([name, url]) => (
-          <a href={url} target="_blank" key={name}>
             <li>{name}</li>
           </a>
         ))}
