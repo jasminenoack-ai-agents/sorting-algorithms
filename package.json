@@ -10,12 +10,16 @@
     "chart.js": "^4.5.0",
     "commonjs": "^0.0.1",
     "liquidjs": "^10.21.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "slash": "^1.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/jquery": "^3.5.32",
     "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "css-loader": "^7.1.2",
     "d3": "^7.9.0",
     "es6-promise": "^4.2.8",
