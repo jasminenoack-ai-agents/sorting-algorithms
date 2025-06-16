@@ -1,6 +1,7 @@
 # sorting-algorithms
 
 Visual demonstrations of common sorting algorithms.
+The interface now relies on [Chart.js](https://www.chartjs.org/) together with D3.js for rendering graphs, replacing the older nvd3 library. Chart.js is bundled directly with the application's code instead of being loaded via a separate script tag.
 
 ## Requirements
 
