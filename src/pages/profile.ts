@@ -6,7 +6,7 @@ import * as sizes from "../sizes";
 import { BaseSort } from "../sorts/baseSort";
 import * as sorts from "../sorts/sorts";
 import * as valueTypes from "../valueTypes";
-import { createBoard } from "./utils";
+import { createBoard, sanitizeOptions } from "./utils";
 
 export const setUpProfile = (
   location: string,
@@ -22,10 +22,10 @@ export const setUpProfile = (
       sort: "Comb",
       value: "Integer",
     },
-    shuffles,
-    sizes,
-    sorts,
-    valueTypes,
+    shuffles: sanitizeOptions(shuffles, ["title"]),
+    sizes: sanitizeOptions(sizes, ["label"]),
+    sorts: sanitizeOptions(sorts, ["title"]),
+    valueTypes: sanitizeOptions(valueTypes, ["title"]),
   });
   return html;
 };

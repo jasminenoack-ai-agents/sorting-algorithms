@@ -5,7 +5,7 @@ import * as shuffles from "../shuffles";
 import * as sizes from "../sizes";
 import * as sorts from "../sorts/sorts";
 import * as valueTypes from "../valueTypes";
-import { createBoard } from "./utils";
+import { createBoard, sanitizeOptions } from "./utils";
 
 export const setUpPipe = (
   location: string,
@@ -21,10 +21,10 @@ export const setUpPipe = (
       sort: "Comb",
       valueType: "Integer",
     },
-    shuffles,
-    sizes,
-    sorts,
-    valueTypes,
+    shuffles: sanitizeOptions(shuffles, ["title"]),
+    sizes: sanitizeOptions(sizes, ["label"]),
+    sorts: sanitizeOptions(sorts, ["title"]),
+    valueTypes: sanitizeOptions(valueTypes, ["title"]),
   });
   return html;
 };
