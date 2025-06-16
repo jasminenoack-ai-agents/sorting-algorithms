@@ -7,7 +7,7 @@ import { Heap } from '../sorts/heap/base';
 import { OddEven } from '../sorts/oddEven/base';
 import { Smooth } from '../sorts/smooth/base';
 import { Integer } from '../valueTypes';
-import React from 'react';
+import * as React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { IndexPage } from '../components/IndexPage';
 
